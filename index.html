@@ -1,27 +1,118 @@
-<div itemscope itemtype="https://schema.org/Person">
-  <span itemprop="name">Jane Doe</span>
-  <img src="janedoe.jpg" itemprop="image" alt="Photo of Jane Doe"/>
+<!DOCTYPE html>
+<html lang="en">
 
-  <span itemprop="jobTitle">Professor</span>
-  <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-    <span itemprop="streetAddress">
-      20341 Whitworth Institute
-      405 N. Whitworth
-    </span>
-    <span itemprop="addressLocality">Seattle</span>,
-    <span itemprop="addressRegion">WA</span>
-    <span itemprop="postalCode">98052</span>
-  </div>
-  <span itemprop="telephone">(425) 123-4567</span>
-  <a href="mailto:jane-doe@xyz.edu" itemprop="email">
-    jane-doe@xyz.edu</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Front-End Development Services",
+      "description": "Professional front-end development services to build user-friendly and responsive web applications. I specialize in creating engaging interfaces using modern technologies.",
+      "image": "URL to a relevant image (e.g., code snippet, UI design)",
+      "url": "URL to your portfolio or services page",
+      "provider": {
+        "@type": "Person",
+        "name": "Your Name",
+        "url": "URL to your personal website or profile"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Your Name",
+        "url": "URL to your personal website or profile"
+      },
+      "serviceType": "Software Development",
+      "category": "Web Development",
+      "keywords": [
+        "front-end development",
+        "web development services",
+        "UI development",
+        "UX development",
+        "responsive design",
+        "[Specific Technology 1, e.g., React]",
+        "[Specific Technology 2, e.g., Angular]",
+        "[Specific Technology 3, e.g., Vue.js]",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Businesses and individuals seeking professional web development services"
+      },
+      "offers": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Front-End Development Services"
+        },
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "price": "[Starting Price or Price Range]",
+            "priceCurrency": "[Currency Code, e.g., USD, EUR]",
+            "billingIncrement": "per project or hourly rate",
+            "unitCode": "HUR" // Example: Hour
+          },
+          {
+            "@type": "QuantitativeValue",
+            "minValue": "[Minimum Project Size/Scope]",
+            "maxValue": "[Maximum Project Size/Scope]",
+            "unitText": "Project Scope"
+          }
+        ],
+        "availability": "https://schema.org/OnlineOnly" // Or specify availability
+      },
+      "areaServed": {
+        "@type": "GeoShape",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sofia",
+          "addressRegion": "Sofia City Province",
+          "addressCountry": "BG"
+        }
+        // Or use a broader areaServed like "Worldwide" or specific countries
+      },
+      "slogan": "Building exceptional user interfaces for the web.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Your Developer Brand Name (if applicable)",
+        "url": "URL to your branding page (if applicable)"
+      }
+    }
+    </script>
+</head>
 
-  Jane's home page:
-  <a href="http://www.janedoe.com" itemprop="url">janedoe.com</a>
+<body>
+    <div itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">Jane Doe</span>
+        <img src="janedoe.jpg" itemprop="image" alt="Photo of Jane Doe" />
 
-  Graduate students:
-  <a href="http://www.xyz.edu/students/alicejones.html" itemprop="colleague">
-    Alice Jones</a>
-  <a href="http://www.xyz.edu/students/bobsmith.html" itemprop="colleague">
-    Bob Smith</a>
-</div>
+        <span itemprop="jobTitle">Professor</span>
+        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">
+                20341 Whitworth Institute
+                405 N. Whitworth
+            </span>
+            <span itemprop="addressLocality">Seattle</span>,
+            <span itemprop="addressRegion">WA</span>
+            <span itemprop="postalCode">98052</span>
+        </div>
+        <span itemprop="telephone">(425) 123-4567</span>
+        <a href="mailto:jane-doe@xyz.edu" itemprop="email">
+            jane-doe@xyz.edu</a>
+
+        Jane's home page:
+        <a href="http://www.janedoe.com" itemprop="url">janedoe.com</a>
+
+        Graduate students:
+        <a href="http://www.xyz.edu/students/alicejones.html" itemprop="colleague">
+            Alice Jones</a>
+        <a href="http://www.xyz.edu/students/bobsmith.html" itemprop="colleague">
+            Bob Smith</a>
+    </div>
+</body>
+
+</html>
